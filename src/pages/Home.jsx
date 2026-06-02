@@ -25,7 +25,7 @@ function Home() {
 
           <div>
             <img
-              src="/public/Hero.jpg"
+              src="/Hero.jpg"
               alt="Hero"
               className="rounded-2xl shadow-2xl w-full h-[450px] object-cover"
             />
@@ -39,7 +39,7 @@ function Home() {
 
           <div>
             <img
-              src="/public/about.jpg"
+              src="/about.jpg"
               alt="About"
               className="rounded-2xl shadow-xl w-full h-[400px] object-cover"
             />
