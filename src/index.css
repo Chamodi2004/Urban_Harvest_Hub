@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+  background-color: #bde6b9;
+}
+
+/* Custom Colors */
+.bg-ecoGreen {
+  background-color: #2E7D32;
+}
+
+.text-ecoGreen {
+  color: #2E7D32;
+}
+
+.bg-earthBrown {
+  background-color: #5D4037;
+}
+
+/* Custom Shadow */
+.card-shadow {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,32 @@
+import { Link } from "react-router-dom";
+
+function ProductCard({ product }) {
+  return (
+<div className="bg-white dark:bg-gray-800 dark:text-white rounded-xl p-4 card-shadow">
+      <img
+        src={product.image}
+        alt={product.name}
+        className="h-48 w-full object-cover rounded"
+      />
+
+      <h2 className="text-2xl font-bold mt-4">
+        {product.name}
+      </h2>
+
+      <p>{product.category}</p>
+
+      <p className="font-bold mt-2">
+        ${product.price}
+      </p>
+
+      <Link
+        to={`/products/${product.id}`}
+        className="bg-ecoGreen text-white px-4 py-2 rounded inline-block mt-4"
+      >
+        View Details
+      </Link>
+    </div>
+  );
+}
+
+export default ProductCard;

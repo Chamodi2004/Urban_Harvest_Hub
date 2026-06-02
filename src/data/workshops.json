@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Organic Farming",
+    "category": "Education",
+    "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399",
+    "description": "Learn sustainable farming methods."
+  },
+
+  {
+    "id": 2,
+    "title": "Eco Crafts",
+    "category": "Lifestyle",
+    "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f",
+    "description": "Create crafts from recycled materials."
+  },
+
+  {
+    "id": 3,
+    "title": "Composting Basics",
+    "category": "Environment",
+    "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "description": "Learn how to compost household waste."
+  },
+
+  {
+    "id": 4,
+    "title": "Solar Energy Workshop",
+    "category": "Technology",
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276",
+    "description": "Introduction to solar energy solutions."
+  },
+
+  {
+    "id": 5,
+    "title": "Urban Gardening",
+    "category": "Education",
+    "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735",
+    "description": "Grow vegetables in small urban spaces."
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Eco Bottle",
+    "category": "Lifestyle",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+    "description": "Reusable eco-friendly bottle",
+    "availability": "In Stock"
+  },
+
+  {
+    "id": 2,
+    "name": "Organic Seeds",
+    "category": "Food",
+    "price": 15,
+    "image": "https://images.unsplash.com/photo-1592928302636-c83cf1e1f2d7",
+    "description": "Organic gardening seeds",
+    "availability": "In Stock"
+  },
+
+  {
+    "id": 3,
+    "name": "Bamboo Toothbrush",
+    "category": "Lifestyle",
+    "price": 10,
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+    "description": "Biodegradable bamboo toothbrush",
+    "availability": "In Stock"
+  },
+
+  {
+    "id": 4,
+    "name": "Reusable Shopping Bag",
+    "category": "Lifestyle",
+    "price": 12,
+    "image": "https://images.unsplash.com/photo-1542838132-92c53300491e",
+    "description": "Eco reusable shopping bag",
+    "availability": "In Stock"
+  },
+
+  {
+    "id": 5,
+    "name": "Organic Tea Pack",
+    "category": "Food",
+    "price": 18,
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+    "description": "Natural organic tea collection",
+    "availability": "In Stock"
+  }
+]

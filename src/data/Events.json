@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Beach Cleanup",
+    "category": "Environment",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    "description": "Join our community beach cleanup event.",
+    "date": "2026-06-15"
+  },
+
+  {
+    "id": 2,
+    "title": "Tree Planting",
+    "category": "Nature",
+    "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+    "description": "Help us plant trees around the city.",
+    "date": "2026-07-01"
+  },
+
+  {
+    "id": 3,
+    "title": "Eco Awareness Walk",
+    "category": "Community",
+    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac",
+    "description": "Spread awareness through community activities.",
+    "date": "2026-07-12"
+  },
+
+  {
+    "id": 4,
+    "title": "Recycling Drive",
+    "category": "Environment",
+    "image": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b",
+    "description": "Promoting recycling habits in urban communities.",
+    "date": "2026-08-10"
+  },
+
+  {
+    "id": 5,
+    "title": "Organic Farmers Market",
+    "category": "Food",
+    "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9",
+    "description": "Support local organic farmers and products.",
+    "date": "2026-08-25"
+  }
+]
