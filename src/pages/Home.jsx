@@ -7,20 +7,20 @@ function Home() {
 
       {/* HERO */}
     {/* HERO */}
-<section className="px-6 py-12">
-  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center min-h-[500px]">
+<section className="px-4 md:px-6 py-12 md:py-16">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center min-h-auto md:min-h-[500px]">
 
     {/* Left Content */}
     <div>
-      <h1 className="text-5xl font-bold text-ecoGreen mb-6">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ecoGreen mb-4 md:mb-6">
         Urban Harvest Hub
       </h1>
 
-      <p className="text-lg leading-8 mb-6">
+      <p className="text-base md:text-lg leading-7 md:leading-8 mb-6 md:mb-8">
         Connect with your community and grow fresh produce together
       </p>
 
-      <button className="bg-ecoGreen text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+      <button className="bg-ecoGreen text-white px-6 py-2 md:py-3 rounded-lg hover:bg-green-700 transition text-sm md:text-base">
         Explore
       </button>
     </div>
@@ -30,7 +30,7 @@ function Home() {
       <img
         src="/Hero.jpg"
         alt="Urban Farming"
-        className="w-full max-w-[650px] h-[450px] object-cover rounded-3xl shadow-xl"
+        className="w-full max-w-[650px] h-[300px] md:h-[450px] object-cover rounded-2xl md:rounded-3xl shadow-lg md:shadow-xl"
       />
     </div>
 
