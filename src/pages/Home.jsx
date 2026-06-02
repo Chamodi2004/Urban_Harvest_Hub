@@ -6,32 +6,36 @@ function Home() {
      <main className="dark:bg-gray-900 dark:text-white">
 
       {/* HERO */}
-      <section className="px-6 pt-0 pb-16">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-26 items-center">
+    {/* HERO */}
+<section className="px-6 py-12">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center min-h-[500px]">
 
-          <div>
-            <h1 className="text-5xl font-bold text-ecoGreen mb-6">
-              Urban Harvest Hub
-            </h1>
+    {/* Left Content */}
+    <div>
+      <h1 className="text-5xl font-bold text-ecoGreen mb-6">
+        Urban Harvest Hub
+      </h1>
 
-            <p className="text-lg leading-8 mb-6">
-              Connect with your community and grow fresh produce together
-            </p>
+      <p className="text-lg leading-8 mb-6">
+        Connect with your community and grow fresh produce together
+      </p>
 
-            <button className="bg-ecoGreen text-white px-6 py-3 rounded-lg">
-              Explore
-            </button>
-          </div>
+      <button className="bg-ecoGreen text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+        Explore
+      </button>
+    </div>
 
-          <div>
-            <img
-              src="/Hero.jpg"
-              alt="Hero"
-              className="rounded-2xl shadow-2xl w-full h-[450px] object-cover"
-            />
-          </div>
-        </div>
-      </section>
+    {/* Right Image */}
+    <div className="flex justify-center">
+      <img
+        src="/Hero.jpg"
+        alt="Urban Farming"
+        className="w-full max-w-[650px] h-[450px] object-cover rounded-3xl shadow-xl"
+      />
+    </div>
+
+  </div>
+</section>
 
       {/* ABOUT */}
       <section className="bg-white dark:bg-gray-800 py-20 px-6">
