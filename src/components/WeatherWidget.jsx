@@ -3,6 +3,30 @@ import { useEffect, useState } from "react";
 function WeatherWidget() {
   const [weather, setWeather] = useState(null);
 
+  const getWeatherEmoji = (icon) => {
+    const iconMap = {
+      "01d": "☀️",
+      "01n": "🌙",
+      "02d": "⛅",
+      "02n": "🌙",
+      "03d": "☁️",
+      "03n": "☁️",
+      "04d": "☁️",
+      "04n": "☁️",
+      "09d": "🌧️",
+      "09n": "🌧️",
+      "10d": "🌦️",
+      "10n": "🌧️",
+      "11d": "⛈️",
+      "11n": "⛈️",
+      "13d": "❄️",
+      "13n": "❄️",
+      "50d": "🌫️",
+      "50n": "🌫️",
+    };
+    return iconMap[icon] || "🌤️";
+  };
+
   useEffect(() => {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=Colombo&appid=6f9ec36adc7fdc52acf07e4806a2a4bc&units=metric"
@@ -27,11 +51,9 @@ function WeatherWidget() {
           📍 Colombo
         </h2>
 
-        <img
-          src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}
-          alt="Weather Icon"
-          className="mx-auto"
-        />
+        <div className="text-7xl my-4">
+          {getWeatherEmoji(weather.weather[0].icon)}
+        </div>
 
         <h1 className="text-6xl font-bold">
           {Math.round(weather.main.temp)}°
