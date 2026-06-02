@@ -14,7 +14,7 @@
     "name": "Organic Seeds",
     "category": "Food",
     "price": 15,
-    "image": "public/seeds.jpg",
+    "image": "/seeds.jpg",
     "description": "Organic gardening seeds",
     "availability": "In Stock"
   },
