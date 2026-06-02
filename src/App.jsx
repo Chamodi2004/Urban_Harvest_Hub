@@ -16,21 +16,23 @@ function App() {
     <>
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <div className="pt-20">
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
 
-        <Route path="/events" element={<Events />} />
-        <Route path="/events/:id" element={<EventDetails />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/events/:id" element={<EventDetails />} />
 
-        <Route path="/workshops" element={<Workshops />} />
+          <Route path="/workshops" element={<Workshops />} />
 
-        <Route path="/booking" element={<Booking />} />
-      </Routes>
+          <Route path="/booking" element={<Booking />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
