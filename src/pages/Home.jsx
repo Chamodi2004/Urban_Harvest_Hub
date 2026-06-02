@@ -6,7 +6,7 @@ function Home() {
      <main className="dark:bg-gray-900 dark:text-white">
 
       {/* HERO */}
-      <section className="px-6 py-16">
+      <section className="px-6 pt-0 pb-16">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-26 items-center">
 
           <div>
