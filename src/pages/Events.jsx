@@ -1,5 +1,4 @@
-// import events from "../data/events.json";
-import events from "src/data/events.json";
+import events from "../data/events.json";
 import EventCard from "../components/EventCard";
 
 function Events() {
