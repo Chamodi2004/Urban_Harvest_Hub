@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "events": "Events",
+    "workshops": "Workshops",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "title": "Urban Harvest Hub",
+    "subtitle": "Connect with your community and grow fresh produce together.",
+    "explore": "Explore",
+
+    "heroAlt": "Urban Farming",
+
+    "aboutAlt": "About Urban Harvest Hub",
+
+    "aboutTitle": "About Us",
+
+    "aboutText1": "Urban Harvest Hub is dedicated to promoting sustainable urban agriculture and fostering community engagement.",
+
+    "aboutText2": "We believe that everyone can grow their own food and make a positive impact on the environment."
+  },
+
+  "weather": {
+    "title": "Current Weather",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "wind": "Wind Speed",
+    "loading": "Loading weather..."
+  }
+}
