@@ -2,17 +2,21 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 import { useAppContext } from "../context/AppContext";
+import { useTranslation } from 'react-i18next';
+import LanguageSelecter from './LanguageSelecter';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const { darkMode, setDarkMode } = useAppContext();
 
+  const { t } = useTranslation();
+
   const navLinks = [
-    { to: "/", label: "Home" },
-    { to: "/products", label: "Products" },
-    { to: "/events", label: "Events" },
-    { to: "/workshops", label: "Workshops" },
+    { to: "/", key: "home" },
+    { to: "/products", key: "products" },
+    { to: "/events", key: "events" },
+    { to: "/workshops", key: "workshops" },
   ];
 
   return (
@@ -34,7 +38,7 @@ function Navbar() {
                 to={link.to}
                 className={`pb-1 transition duration-200 ${isActive ? "border-b-2 border-white" : "border-b-2 border-transparent"} hover:border-white hover:text-gray-200`}
               >
-                {link.label}
+                {t(`nav.${link.key}`)}
               </Link>
             );
           })}
@@ -43,7 +47,8 @@ function Navbar() {
         {/* RIGHT SIDE */}
         <div className="flex items-center gap-3">
 
-         
+          {/* LANGUAGE SELECTOR */}
+          <LanguageSelecter />
 
           {/* DARK MODE */}
           <button
@@ -75,10 +80,15 @@ function Navbar() {
                 className={`pb-2 transition duration-200 ${isActive ? "border-b-2 border-white" : "border-b-2 border-transparent"} hover:border-white hover:text-gray-200`}
                 onClick={() => setMenuOpen(false)}
               >
-                {link.label}
+                {t(`nav.${link.key}`)}
               </Link>
             );
           })}
+
+          {/* Mobile language selector */}
+          <div>
+            <LanguageSelecter className="w-full" />
+          </div>
         </div>
       )}
     </nav>
