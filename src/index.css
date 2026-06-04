@@ -2,25 +2,157 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: sans-serif;
-  background-color: #bde6b9;
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+html {
+  scroll-behavior: smooth;
 }
 
-/* Custom Colors */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #bde6b9;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark body {
+  background-color: #111827;
+  color: white;
+}
+
+/* =========================
+   CUSTOM COLORS
+========================= */
+
 .bg-ecoGreen {
-  background-color: #2E7D32;
+  background-color: #2e7d32;
 }
 
 .text-ecoGreen {
-  color: #2E7D32;
+  color: #2e7d32;
 }
 
 .bg-earthBrown {
-  background-color: #5D4037;
+  background-color: #5d4037;
 }
 
-/* Custom Shadow */
+.text-earthBrown {
+  color: #5d4037;
+}
+
+/* =========================
+   CARD SHADOW
+========================= */
+
 .card-shadow {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   DARK MODE CARDS
+========================= */
+
+.dark .card-shadow {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+input,
+textarea,
+select {
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* =========================
+   LANGUAGE SELECTOR
+========================= */
+
+.language-selector {
+  background-color: #15803d;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.language-selector option {
+  background-color: white;
+  color: black;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d1d5db;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1b5e20;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 }
