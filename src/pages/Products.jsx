@@ -18,23 +18,29 @@ function Products() {
         Products
       </h1>
 
-      <select
-        onChange={(e) => setCategory(e.target.value)}
-        className="border p-3 rounded mb-6"
-      >
-        <option>All</option>
-        <option>Food</option>
-        <option>Lifestyle</option>
-      </select>
+      <div className="mb-6">
+        <label htmlFor="category-select" className="block text-sm font-semibold mb-2">
+          Filter by Category
+        </label>
+        <select
+          id="category-select"
+          onChange={(e) => setCategory(e.target.value)}
+          className="border border-gray-300 dark:border-gray-700 p-3 rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ecoGreen"
+        >
+          <option value="All">All Categories</option>
+          <option value="Food">Food</option>
+          <option value="Lifestyle">Lifestyle</option>
+        </select>
+      </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <ul className="grid md:grid-cols-2 gap-6 list-none p-0">
         {filteredProducts.map((product) => (
           <ProductCard
             key={product.id}
             product={product}
           />
         ))}
-      </div>
+      </ul>
     </main>
   );
 }

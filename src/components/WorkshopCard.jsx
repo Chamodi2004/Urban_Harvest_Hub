@@ -1,6 +1,6 @@
 function WorkshopCard({ workshop }) {
   return (
-    <div className="bg-white dark:bg-gray-800 dark:text-white rounded-xl p-4 card-shadow">
+    <li className="bg-white dark:bg-gray-800 dark:text-white rounded-xl p-4 card-shadow list-none">
       <img
         src={workshop.image}
         alt={workshop.title}
@@ -16,7 +16,7 @@ function WorkshopCard({ workshop }) {
       <p className="mt-2">
         {workshop.description}
       </p>
-    </div>
+    </li>
   );
 }
 

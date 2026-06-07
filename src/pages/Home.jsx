@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import WeatherWidget from "../components/WeatherWidget";
 
 function Home() {
   const { t } = useTranslation();
 
   return (
-    <main className="dark:bg-gray-900 dark:text-white">
+    <main id="main-content" className="dark:bg-gray-900 dark:text-white">
 
       {/* HERO */}
       <section className="px-5 pt-28 pb-16">
@@ -20,9 +21,12 @@ function Home() {
               {t("home.subtitle")}
             </p>
 
-            <button className="bg-ecoGreen text-white px-6 py-3 rounded-lg">
+            <Link 
+              to="/products" 
+              className="inline-block bg-ecoGreen text-white px-6 py-3 rounded-lg hover:bg-green-800 transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ecoGreen"
+            >
               {t("home.explore")}
-            </button>
+            </Link>
           </div>
 
           <div>

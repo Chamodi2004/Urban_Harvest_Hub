@@ -9,14 +9,14 @@ function Workshops() {
         Workshops
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <ul className="grid md:grid-cols-2 gap-6 list-none p-0">
         {workshops.map((workshop) => (
           <WorkshopCard
             key={workshop.id}
             workshop={workshop}
           />
         ))}
-      </div>
+      </ul>
     </main>
   );
 }

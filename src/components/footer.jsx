@@ -21,30 +21,36 @@ function Footer() {
           </div>
 
           {/* Footer Navigation */}
-          <div className="flex flex-wrap justify-center gap-6 text-lg">
+          <nav aria-label="Footer Navigation" className="text-lg">
+            <ul className="flex flex-wrap justify-center gap-6">
+              <li>
+                <Link
+                  to="/"
+                  className="hover:text-gray-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded"
+                >
+                  Home
+                </Link>
+              </li>
 
-            <Link
-              to="/"
-              className="hover:text-gray-300 transition"
-            >
-              Home
-            </Link>
+              <li>
+                <Link
+                  to="/events"
+                  className="hover:text-gray-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded"
+                >
+                  Events
+                </Link>
+              </li>
 
-            <Link
-              to="/events"
-              className="hover:text-gray-300 transition"
-            >
-              Events
-            </Link>
-
-            <Link
-              to="/booking"
-              className="hover:text-gray-300 transition"
-            >
-              Booking
-            </Link>
-
-          </div>
+              <li>
+                <Link
+                  to="/booking"
+                  className="hover:text-gray-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded"
+                >
+                  Booking
+                </Link>
+              </li>
+            </ul>
+          </nav>
 
         </div>
 

@@ -48,11 +48,11 @@ function WeatherWidget() {
     <div className="max-w-md mx-auto bg-gradient-to-br from-sky-500 to-blue-700 text-white rounded-3xl shadow-2xl p-8">
       <div className="text-center">
         <h2 className="text-3xl font-bold mb-2">
-          📍 Colombo
+          <span role="img" aria-hidden="true">📍</span> Colombo
         </h2>
 
         <div className="text-7xl my-4">
-          {getWeatherEmoji(weather.weather[0].icon)}
+          <span role="img" aria-hidden="true">{getWeatherEmoji(weather.weather[0].icon)}</span>
         </div>
 
         <h1 className="text-6xl font-bold">

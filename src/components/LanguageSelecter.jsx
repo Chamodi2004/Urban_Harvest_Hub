@@ -11,7 +11,8 @@ function LanguageSelecter({ className = "" }) {
     <select
       value={i18n.language}
       onChange={changeLanguage}
-      className={`bg-green-700 text-white border border-white rounded-md px-3 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-white ${className}`}
+      aria-label="Select language"
+      className={`bg-green-700 text-white border border-white rounded-md px-3 py-2 text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${className}`}
     >
       <option value="en">English</option>
       <option value="si">සිංහල</option>

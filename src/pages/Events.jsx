@@ -9,14 +9,14 @@ function Events() {
         Events
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <ul className="grid md:grid-cols-2 gap-6 list-none p-0">
         {events.map((event) => (
           <EventCard
             key={event.id}
             event={event}
           />
         ))}
-      </div>
+      </ul>
     </main>
   );
 }

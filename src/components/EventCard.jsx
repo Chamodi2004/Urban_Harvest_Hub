@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function EventCard({ event }) {
   return (
-<div className="bg-white dark:bg-gray-800 dark:text-white rounded-xl p-4 card-shadow">
+<li className="bg-white dark:bg-gray-800 dark:text-white rounded-xl p-4 card-shadow list-none">
       <img
         src={event.image}
         alt={event.title}
@@ -17,11 +17,12 @@ function EventCard({ event }) {
 
       <Link
         to={`/events/${event.id}`}
-        className="bg-ecoGreen text-white px-4 py-2 rounded inline-block mt-4"
+        className="bg-ecoGreen text-white px-4 py-2 rounded inline-block mt-4 hover:bg-green-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ecoGreen"
+        aria-label={`View details for ${event.title}`}
       >
         View Details
       </Link>
-    </div>
+    </li>
   );
 }
 
