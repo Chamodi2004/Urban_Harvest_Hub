@@ -26,7 +26,7 @@ function Navbar() {
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition">
           <img
-            src="/logo.png"
+            src="/Logo.png"
             alt="Urban Harvest Hub Logo"
             className="w-9 h-9 md:w-10 md:h-10 object-contain rounded-full bg-white/20 p-1"
           />
