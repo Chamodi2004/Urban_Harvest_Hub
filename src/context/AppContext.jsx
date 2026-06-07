@@ -24,5 +24,5 @@ export function AppProvider({ children }) {
     </AppContext.Provider>
   );
 }
-
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAppContext = () => useContext(AppContext);

@@ -24,9 +24,16 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* LOGO */}
-        <h1 className="text-xl md:text-2xl font-bold">
-          Urban Harvest Hub
-        </h1>
+        <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition">
+          <img
+            src="/logo.png"
+            alt="Urban Harvest Hub Logo"
+            className="w-9 h-9 md:w-10 md:h-10 object-contain rounded-full bg-white/20 p-1"
+          />
+          <span className="text-xl md:text-2xl font-bold tracking-tight">
+            Urban Harvest Hub
+          </span>
+        </Link>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex items-center gap-6">
