@@ -41,13 +41,13 @@ function Navbar() {
             alt="Urban Harvest Hub Logo"
             className="w-10 h-10 object-contain rounded-full bg-white/20 p-1.5 shadow-inner"
           />
-          <span className="text-xl md:text-2xl font-display font-extrabold tracking-tight bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
+          <span className="text-lg sm:text-xl lg:text-2xl font-display font-extrabold tracking-tight bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
             Urban Harvest Hub
           </span>
         </Link>
 
         {/* DESKTOP NAV */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.to;
@@ -87,7 +87,7 @@ function Navbar() {
 
           {/* HAMBURGER */}
           <button
-            className="md:hidden p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="lg:hidden p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
@@ -99,7 +99,7 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-ecoGreen/95 dark:bg-gray-950/90 backdrop-blur-md px-6 pb-6 border-t border-white/10 dark:border-gray-800/40">
+        <div className="lg:hidden bg-ecoGreen/95 dark:bg-gray-950/90 backdrop-blur-md px-6 pb-6 border-t border-white/10 dark:border-gray-800/40">
           <ul className="flex flex-col gap-3 pt-4">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.to;

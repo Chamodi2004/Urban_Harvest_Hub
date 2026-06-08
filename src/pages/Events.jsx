@@ -16,18 +16,18 @@ function Events() {
     <main id="main-content" className="pt-32 pb-24 px-6 max-w-7xl mx-auto min-h-screen dark:text-white">
       
       {/* Header and Search */}
-      <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-gray-200/50 dark:border-gray-800/50 pb-6">
+      <div className="mb-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-gray-200/50 dark:border-gray-800/50 pb-6">
         <div>
-          <h1 className="text-4xl md:text-5xl font-display font-extrabold text-ecoGreen dark:text-green-400">
+          <h1 className="text-4xl lg:text-5xl font-display font-extrabold text-ecoGreen dark:text-green-400">
             Community Events
           </h1>
-          <p className="mt-2 text-gray-655 dark:text-gray-400 text-sm md:text-base max-w-md">
+          <p className="mt-2 text-gray-655 dark:text-gray-400 text-sm lg:text-base max-w-md">
             Participate in active environmental initiatives, urban walks, and sustainability gatherings.
           </p>
         </div>
 
         {/* Search Input Box */}
-        <div className="relative w-full md:w-80">
+        <div className="relative w-full lg:w-80">
           <input
             type="text"
             placeholder="Search events or categories..."
@@ -41,7 +41,7 @@ function Events() {
 
       {/* Events Grid */}
       {filteredEvents.length > 0 ? (
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 list-none p-0">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 list-none p-0">
           {filteredEvents.map((event) => (
             <EventCard
               key={event.id}

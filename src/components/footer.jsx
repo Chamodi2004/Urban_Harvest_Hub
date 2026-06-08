@@ -42,19 +42,19 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
           
           {/* Info Column */}
-          <div className="md:col-span-5 text-center md:text-left">
+          <div className="sm:col-span-2 lg:col-span-5 text-center sm:text-left">
             <h2 className="text-3xl font-display font-extrabold tracking-tight bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
               Urban Harvest Hub
             </h2>
-            <p className="mt-4 text-sm text-green-100/80 leading-relaxed max-w-sm">
+            <p className="mt-4 text-sm text-green-100/80 leading-relaxed max-w-sm mx-auto sm:mx-0">
               Empowering urban communities with sustainable growing methods, organic products, and local ecological initiatives for a greener tomorrow.
             </p>
             
             {/* Social Icons */}
-            <div className="flex justify-center md:justify-start gap-4 mt-6">
+            <div className="flex justify-center sm:justify-start gap-4 mt-6">
               <a 
                 href="https://github.com" 
                 target="_blank" 
@@ -84,7 +84,7 @@ function Footer() {
           </div>
 
           {/* Links Column */}
-          <div className="md:col-span-3 text-center md:text-left">
+          <div className="sm:col-span-1 lg:col-span-3 text-center sm:text-left">
             <h3 className="font-display font-bold text-lg mb-4 text-white uppercase tracking-wider">
               Quick Links
             </h3>
@@ -118,7 +118,7 @@ function Footer() {
           </div>
 
           {/* Newsletter / Contact Column */}
-          <div className="md:col-span-4 text-center md:text-left">
+          <div className="sm:col-span-1 lg:col-span-4 text-center sm:text-left">
             <h3 className="font-display font-bold text-lg mb-4 text-white uppercase tracking-wider">
               Stay Connected
             </h3>
@@ -126,7 +126,7 @@ function Footer() {
               Subscribe to our newsletter for weekly urban farming tips and event updates.
             </p>
             
-            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto md:mx-0">
+            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto sm:mx-0">
               <input
                 type="email"
                 placeholder="Enter email address"

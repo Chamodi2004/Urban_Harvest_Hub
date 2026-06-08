@@ -41,8 +41,8 @@ function EventDetails() {
       </div>
 
       {/* Main Details Card */}
-      <div className="bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700/60 shadow-xl overflow-hidden p-6 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
+      <div className="bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700/60 shadow-xl overflow-hidden p-6 lg:p-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           
           {/* Image Container */}
           <div className="relative group rounded-2xl overflow-hidden bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-700">
@@ -59,7 +59,7 @@ function EventDetails() {
           {/* Details Column */}
           <div className="space-y-6">
             <div>
-              <h1 className="text-3xl md:text-4xl font-display font-extrabold text-gray-950 dark:text-white leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-display font-extrabold text-gray-950 dark:text-white leading-tight">
                 {event.title}
               </h1>
               

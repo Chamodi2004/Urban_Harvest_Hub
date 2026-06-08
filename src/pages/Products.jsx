@@ -27,7 +27,7 @@ function Products() {
       </div>
 
       {/* Category Filter Pills */}
-      <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-gray-200/50 dark:border-gray-800/50 pb-6">
+      <div className="mb-8 flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-gray-200/50 dark:border-gray-800/50 pb-6">
         <div>
           <span className="block text-xs uppercase tracking-wider text-gray-455 dark:text-gray-400 font-bold mb-2">
             Filter by Category
@@ -55,7 +55,7 @@ function Products() {
       </div>
 
       {/* Products Grid */}
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 list-none p-0">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 list-none p-0">
         {filteredProducts.map((product) => (
           <ProductCard
             key={product.id}

@@ -9,18 +9,18 @@ function Home() {
     <main id="main-content" className="dark:bg-gray-950 dark:text-white overflow-hidden">
 
       {/* HERO SECTION */}
-      <section className="relative px-6 pt-24 pb-20 md:py-32 bg-gradient-to-b from-green-50/60 via-white to-transparent dark:from-gray-950 dark:via-gray-900 dark:to-transparent">
+      <section className="relative px-6 pt-24 pb-20 lg:py-32 bg-gradient-to-b from-green-50/60 via-white to-transparent dark:from-gray-950 dark:via-gray-900 dark:to-transparent">
         {/* Background decorative blob */}
         <div className="absolute top-0 right-0 -z-10 w-96 h-96 bg-green-200/30 dark:bg-green-900/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-10 left-0 -z-10 w-80 h-80 bg-brown-200/20 dark:bg-amber-900/5 rounded-full blur-3xl pointer-events-none"></div>
 
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-display font-extrabold text-ecoGreen dark:text-green-400 leading-tight">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-ecoGreen dark:text-green-400 leading-tight">
               {t("home.title")}
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0">
+            <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg mx-auto lg:mx-0">
               {t("home.subtitle")}
             </p>
 
@@ -40,7 +40,7 @@ function Home() {
             <img
               src="/Hero.jpg"
               alt={t("home.heroAlt")}
-              className="relative w-full h-[280px] sm:h-[350px] md:h-[480px] object-cover rounded-3xl shadow-2xl border border-white/20 dark:border-gray-800 transition duration-500 group-hover:scale-[1.01]"
+              className="relative w-full h-[280px] sm:h-[350px] lg:h-[480px] object-cover rounded-3xl shadow-2xl border border-white/20 dark:border-gray-800 transition duration-500 group-hover:scale-[1.01]"
             />
           </div>
         </div>
@@ -48,19 +48,19 @@ function Home() {
 
       {/* ABOUT SECTION */}
       <section className="bg-white dark:bg-gray-900 py-24 px-6 border-y border-gray-100 dark:border-gray-850/30">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
-          <div className="relative group order-2 md:order-1">
+          <div className="relative group order-2 lg:order-1">
             <div className="absolute -inset-3 bg-gradient-to-bl from-earthBrown to-amber-500 rounded-2xl opacity-10 blur-md group-hover:opacity-20 transition duration-300"></div>
             <img
               src="/about.jpg"
               alt={t("home.aboutAlt")}
-              className="relative rounded-2xl shadow-xl w-full h-[300px] md:h-[420px] object-cover border border-white/20 dark:border-gray-800 transition duration-500 group-hover:scale-[1.01]"
+              className="relative rounded-2xl shadow-xl w-full h-[300px] lg:h-[420px] object-cover border border-white/20 dark:border-gray-800 transition duration-500 group-hover:scale-[1.01]"
             />
           </div>
 
-          <div className="space-y-6 order-1 md:order-2">
-            <h2 className="text-3xl md:text-4xl font-display font-extrabold text-ecoGreen dark:text-green-400">
+          <div className="space-y-6 order-1 lg:order-2">
+            <h2 className="text-3xl lg:text-4xl font-display font-extrabold text-ecoGreen dark:text-green-400">
               {t("home.aboutTitle")}
             </h2>
 
