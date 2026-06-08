@@ -31,31 +31,35 @@ function Navbar() {
   }, [menuOpen]);
 
   return (
-    <nav aria-label="Global Navigation" className="bg-ecoGreen text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+    <nav aria-label="Global Navigation" className="bg-ecoGreen/90 dark:bg-gray-950/80 backdrop-blur-md text-white fixed top-0 left-0 w-full z-50 border-b border-white/10 dark:border-gray-800/40 shadow-lg transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* LOGO */}
-        <Link to="/" className="flex items-center gap-2 hover:opacity-90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded-lg">
+        <Link to="/" className="flex items-center gap-3 hover:scale-[1.02] transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded-lg">
           <img
             src="/Logo.png"
             alt="Urban Harvest Hub Logo"
-            className="w-9 h-9 md:w-10 md:h-10 object-contain rounded-full bg-white/20 p-1"
+            className="w-10 h-10 object-contain rounded-full bg-white/20 p-1.5 shadow-inner"
           />
-          <span className="text-xl md:text-2xl font-bold tracking-tight">
+          <span className="text-xl md:text-2xl font-display font-extrabold tracking-tight bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
             Urban Harvest Hub
           </span>
         </Link>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:block">
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-8">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.to;
               return (
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className={`pb-1 transition duration-200 ${isActive ? "border-b-2 border-white" : "border-b-2 border-transparent"} hover:border-white hover:text-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded`}
+                    className={`font-display font-medium text-sm uppercase tracking-wider pb-1 transition duration-200 border-b-2 ${
+                      isActive 
+                        ? "border-white text-white font-semibold" 
+                        : "border-transparent text-gray-200 hover:text-white hover:border-white/50"
+                    } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:rounded`}
                     aria-current={isActive ? "page" : undefined}
                   >
                     {t(`nav.${link.key}`)}
@@ -75,7 +79,7 @@ function Navbar() {
           {/* DARK MODE */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="bg-white text-black p-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white"
+            className="bg-white/10 hover:bg-white/20 border border-white/20 text-white p-2.5 rounded-xl transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white"
             aria-label={darkMode ? "Switch to light theme" : "Switch to dark theme"}
           >
             {darkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -83,27 +87,31 @@ function Navbar() {
 
           {/* HAMBURGER */}
           <button
-            className="md:hidden p-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="md:hidden p-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
           >
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
       {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-ecoGreen px-6 pb-6">
-          <ul className="flex flex-col gap-4">
+        <div className="md:hidden bg-ecoGreen/95 dark:bg-gray-950/90 backdrop-blur-md px-6 pb-6 border-t border-white/10 dark:border-gray-800/40">
+          <ul className="flex flex-col gap-3 pt-4">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.to;
               return (
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className={`block pb-2 transition duration-200 ${isActive ? "border-b-2 border-white" : "border-b-2 border-transparent"} hover:border-white hover:text-gray-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white`}
+                    className={`block py-2 px-3 rounded-lg font-display text-sm uppercase tracking-wider transition duration-200 ${
+                      isActive 
+                        ? "bg-white/20 text-white font-semibold" 
+                        : "text-gray-200 hover:bg-white/10 hover:text-white"
+                    } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white`}
                     onClick={() => setMenuOpen(false)}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -115,7 +123,7 @@ function Navbar() {
           </ul>
 
           {/* Mobile language selector */}
-          <div className="mt-4">
+          <div className="mt-4 pt-4 border-t border-white/10">
             <LanguageSelecter className="w-full" />
           </div>
         </div>

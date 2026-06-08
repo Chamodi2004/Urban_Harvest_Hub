@@ -10,12 +10,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        ecoGreen: "#2E7D32",
-        earthBrown: "#5D4037",
+        ecoGreen: {
+          light: "#4caf50",
+          DEFAULT: "#2e7d32",
+          dark: "#1b5e20",
+        },
+        earthBrown: {
+          light: "#8d6e63",
+          DEFAULT: "#5d4037",
+          dark: "#3e2723",
+        },
       },
 
       fontFamily: {
-        display: ["Poppins", "sans-serif"],
+        sans: ["'Plus Jakarta Sans'", "sans-serif"],
+        display: ["Outfit", "sans-serif"],
       },
     },
   },

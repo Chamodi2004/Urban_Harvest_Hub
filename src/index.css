@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #bde6b9;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #f4f8f6;
+  color: #1f2937;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -23,8 +24,8 @@ body {
 ========================= */
 
 .dark body {
-  background-color: #111827;
-  color: white;
+  background-color: #0b0f19;
+  color: #f3f4f6;
 }
 
 /* =========================
