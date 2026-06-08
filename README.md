@@ -1,11 +1,12 @@
 # 🌱 Urban Harvest Hub
+Demo link: https://urban-harvest-hub-blue.vercel.app/
 
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?style=flat-square&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=flat-square&logo=vite)](https://vite.dev/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![i18n](https://img.shields.io/badge/i18next-Multilingual-26A69A?style=flat-square)](https://www.i18next.com/)
 
-**Urban Harvest Hub** is a modern, responsive web application designed to promote sustainable urban agriculture, facilitate local produce/lifestyle product discovery, and foster community engagement through gardening workshops and ecological events. 
+**Urban Harvest Hub** is a modern, responsive SPA application designed to promote sustainable urban agriculture, facilitate local produce/lifestyle product discovery, and foster community engagement through gardening workshops and ecological events. 
 
 ---
 
